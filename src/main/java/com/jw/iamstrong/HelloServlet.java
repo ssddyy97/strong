@@ -22,6 +22,10 @@ public class HelloServlet extends HttpServlet {
         out.println("</body></html>");
     }
 
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        System.out.println("이것이 포스트다!!")
+    }
+
     public void destroy() {
     }
 }
